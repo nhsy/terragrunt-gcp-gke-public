@@ -4,7 +4,6 @@ set -xe
 GKE_CLUSTER=$(cd resources/04-gke && terragrunt output -raw name)
 
 echo GKE_CLUSTER: $GKE_CLUSTER
-echo ZONE: $ZONE
 echo
 
 if [[ -z "$GKE_CLUSTER" ]]; then
