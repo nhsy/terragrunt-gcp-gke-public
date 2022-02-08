@@ -31,5 +31,5 @@ steps:
       echo "Setting up oauth and environment variables"
       source ./scripts/oauth.sh      
       source ./scripts/env.sh
-      make init tunnel
+      make all
       ./scripts/flux-install.sh
