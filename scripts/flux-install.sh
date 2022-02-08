@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -xe
+set -e
 
 GKE_CLUSTER=$(cd resources/03-gke && terragrunt output -raw name)
 
